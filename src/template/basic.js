@@ -16,133 +16,17 @@ export default
 
 /*段落*/
 p {
-  font-size: 16px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin: 0;
-  line-height: 26px;
-  color: black;
+  font-family: Avenir, "PingFangSC-Light" !important;
+  font-size: 15px !important;
+  color: #232B2D;
+  line-height: 1.8em !important;
+  margin: 0.5em 1em;
+        padding: 0.5em 1em;
+  text-align: justify;
 }
 
 /*标题*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: black;
-}
-h1 {
-  font-size: 28px;
-}
-h2 {
-  font-size: 24px;
-}
-h3 {
-  font-size: 20px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 16px;
-}
 
-/*列表*/
-ul,
-ol {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 20px;
-  color: black;
-}
-ul {
-  list-style-type: disc;
-}
-ol {
-  list-style-type: decimal;
-}
-li {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  line-height: 26px;
-  text-align: left;
-  color: black;
-}
-
-/*引用*/
-blockquote {
-  display: block;
-  font-size: 0.9em;
-  overflow: auto;
-  overflow-scrolling: touch;
-  border-left: 3px solid rgba(0, 0, 0, 0.4);
-  background: rgba(0, 0, 0, 0.05);
-  color: #6a737d;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-blockquote p {
-  margin: 0px;
-  color: black;
-  line-height: 26px;
-}
-
-/*链接*/
-a {
-  text-decoration: none;
-  color: #1e6bb8;
-  word-wrap: break-word;
-  font-weight: bold;
-}
-
-/*加粗*/
-strong {
-  font-weight: bold;
-  color: black;
-}
-
-/*斜体*/
-em {
-  font-style: italic;
-  color: black;
-}
-
-/*加粗斜体*/
-strong em {
-  font-weight: bold;
-  color: black;
-}
-
-/*删除线*/
-del {
-  font-style: italic;
-  color: black;
-}
-
-/*分隔线*/
-hr {
-  height: 1px;
-  margin: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-top: 1px solid black;
-}
-
-/*代码块*/
 pre {
   overflow-x: auto;
 }
@@ -166,61 +50,6 @@ p code, li code{
   background-color: rgba(27,31,35,.05);
   font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
   word-break: break-all;
-}
-
-/*图片*/
-img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-/*图片*/
-figure {
-  mairgin: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/*图片描述文字*/
-figcaption {
-  margin-top: 5px;
-  text-align: center;
-  color: #888;
-  font-size: 14px;
-}
-
-/*表格*/
-table {
-  display: table;
-  text-align: left;
-}
-tbody {
-  border: 0;
-}
-
-table tr {
-  border: 0;
-  border-top: 1px solid #ccc;
-  background-color: white;
-}
-
-table tr:nth-child(2n) {
-  background-color: #F8F8F8;
-}
-
-table tr th,
-table tr td {
-  font-size: 16px;
-  border: 1px solid #ccc;
-  padding: 5px 15px;
-  text-align: left;
-  min-width: 70px;
-}
-
-table tr th {
-  font-weight: bold;
-  background-color: #f0f0f0;
 }
 
 /* 微信代码块 */
@@ -288,64 +117,124 @@ table tr th {
   line-height: 20px;
 }
 
-/* 公式注释 */
-.katex-mathml {
-  display: none;
+
+p {
+  margin: 0 0 1.2em 0 !important;
+}
+table, pre, dl, blockquote, q, ul, ol {
+  margin: 1.2em 0;
+}
+ul, ol {
+  padding-left: 2em;
+}
+li {
+  margin: 0.5em 0;
 }
 
-.katex {
-  display: inline-block;
-  line-height: 28px;
+li p {
+  margin: 0.5em 0 !important;
 }
-
-.math-img-inline {
-  display: inline-block;
-  line-height: inherit;
-  height: 28px;
-  width: auto;
-  vertical-align: middle
-}
-
-.katex-inline {
-  display: inline;
-}
-
-.math-img-block {
-  width: 100%;
-}
-
-.footnote-word {
-  color: #1e6bb8;
-  font-weight: bold;
-}
-
-.footnote-ref {
-  color: #1e6bb8;
-  font-weight: bold;
-}
-
-.footnote-item {
-  display: flex;
-}
-
-.footnote-num {
-  display: inline;
-  width: 10%; /*神奇，50px就不可以*/
-  background: none;
-  font-size: 80%;
-  opacity: 0.6;
-  line-height: 26px;
-  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.footnote-item p {
-  display: inline;
-  font-size: 14px;
-  width: 90%;
-  padding: 0px;
+ul ul, ul ol, ol ul, ol ol {
   margin: 0;
-  line-height: 26px;
-  color: black;
-  word-break:break-all;
-  width: calc(100%-50)
-}`
+  padding-left: 1em;
+}
+ol ol, ul ol {
+  list-style-type: lower-roman;
+}
+ul ul ol, ul ol ol, ol ul ol, ol ol ol {
+  list-style-type: lower-alpha;
+}
+dl {
+  padding: 0;
+}
+dl dt {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+}
+dl dd {
+  margin: 0 0 1em;
+  padding: 0 1em;
+}
+blockquote, q  {
+  border-left: 3px solid #777777;
+  background-color: #FAFAFA;
+  padding: 0em 1em;
+  margin: 0em 1em;
+  color: #777777;
+  quotes: none;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+  content: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.3em 0 1em;
+  padding: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.6em;
+  border-bottom: 1px solid #ddd;
+}
+
+h2   {
+  padding: 0 1em;
+  margin: 0 1em;
+  font-size: 1.3em;
+  text-align: center;
+  color: #FFD150;
+  border-bottom: 1px solid #DDDDDD;
+}
+h3 {
+  font-size: 1.3em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+table {
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+}
+tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+table tr th, table tr td {
+  font-size: 1em;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+table tr th {
+ font-weight: bold;
+  background-color: #F0F0F0;
+}
+strong {
+  color: #333333;
+  font-weight: bold;
+}
+
+`
