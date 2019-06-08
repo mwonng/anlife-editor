@@ -33,7 +33,7 @@ class Navbar extends Component {
       <div style={style.navBar}>
         <div style={style.leftNav}>
           {/* <Title /> */}
-          <section style={style.title}>Markdown Nice</section>
+          <section style={style.title}>Anlife 公众号助手</section>
           <div>
             <ButtonGroup style={style.btnGroupMargin}>
               <Del />
@@ -54,10 +54,8 @@ class Navbar extends Component {
         </div>
         <div style={style.rightNav}>
           <Copy />
-          <About />
           <ThemeSelect />
           {/* <Save /> */}
-          {this.props.userInfo.userInfo.login ? <User /> : <LogIn />}
         </div>
       </div>
     );

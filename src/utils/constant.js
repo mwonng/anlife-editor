@@ -31,18 +31,18 @@ export const TEMPLATE_OPTIONS = [
     id: "normal",
     name: "默认主题"
   },
-  {
-    id: "orange",
-    name: "清新小橙"
-  },
-  {
-    id: "Mayandev",
-    name: "Mayandev"
-  },
-  {
-    id: "djmaxwow",
-    name: "djmaxwow"
-  },
+  // {
+  //   id: "orange",
+  //   name: "清新小橙"
+  // },
+  // {
+  //   id: "Mayandev",
+  //   name: "Mayandev"
+  // },
+  // {
+  //   id: "djmaxwow",
+  //   name: "djmaxwow"
+  // },
   {
     id: "custom",
     name: "自定义"
