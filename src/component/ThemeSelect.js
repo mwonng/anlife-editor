@@ -63,12 +63,12 @@ class ThemeSelect extends React.Component {
 
     return (
       <div>
-        <Dropdown overlay={mdMenu} placement="bottomCenter">
+        {/* <Dropdown overlay={mdMenu} placement="bottomCenter">
           <Button style={mdMenuStyle}>
             {TEMPLATE_OPTIONS[templateNum].name}
             <Icon type="down" />
           </Button>
-        </Dropdown>
+        </Dropdown> */}
         <Dropdown overlay={codeMenu} placement="bottomCenter">
           <Button style={style.codeMenu}>
             {CODE_OPTIONS[codeNum].name}

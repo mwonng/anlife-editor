@@ -180,14 +180,19 @@ h1 {
 
 h2   {
   padding: 0 1em;
-  margin: 0 1em;
+  margin: 1em .5em;
   font-size: 1.3em;
   text-align: center;
   color: #FFD150;
   border-bottom: 1px solid #DDDDDD;
 }
 h3 {
+  padding: 0 1em;
+  margin: 1em;
   font-size: 1.3em;
+  color: #9999FF;
+  text-align: center;
+  border-bottom: 1px solid #DDDDDD;
 }
 h4 {
   font-size: 1.2em;
